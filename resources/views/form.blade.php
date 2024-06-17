@@ -5,6 +5,7 @@
 </head>
 <body>
     <form method="POST" action="{{ route('submit-form') }}">
+    <!-- CSRF protection token -->
         @csrf
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br><br>
@@ -14,7 +15,7 @@
             <option value="red">Red</option>
             <option value="blue">Blue</option>
             <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
         </select><br><br>
 
         <label for="consent">
